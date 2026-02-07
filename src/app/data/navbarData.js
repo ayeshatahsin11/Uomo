@@ -33,7 +33,7 @@ const navbarData = {
     ],
     icons : [
        {
-        id : 1,
+        name : "Search",
         icon : (
             
 <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -51,7 +51,7 @@ const navbarData = {
         )
        },
        {
-        id : 2,
+        id : "User",
         icon : (
             
 
@@ -70,7 +70,7 @@ const navbarData = {
         )
        },
        {
-        id : 3,
+        id : "Heart",
         icon : (
             
 
@@ -89,7 +89,7 @@ const navbarData = {
         )
        },
        {
-        id : 4,
+        id : "Cart",
         icon : (
             
 
@@ -103,7 +103,7 @@ const navbarData = {
         )
        },
        {
-        id : 5,
+        id : "Menu",
         icon : (
             
 

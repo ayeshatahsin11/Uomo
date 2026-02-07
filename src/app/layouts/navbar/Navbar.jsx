@@ -30,7 +30,7 @@ const Navbar = () => {
 <ul className='flex gap-8'>
   {navbarData?.icons?.map((item, index) => (
     <li key={index}>
-    <button className='cursor-pointer'>{item.icon}</button>
+    <button className='cursor-pointer'>{item?.icon}</button>
     </li>
   ))}
 </ul>
