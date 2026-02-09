@@ -8,9 +8,14 @@ const Category = () => {
     <>
       <section>
         <Container>
-          <div className="grid grid-cols-2 grid-rows-2">
+          <div className="grid h-100 grid-cols-4 grid-rows-2 gap-2">
             {categoryData?.map((item) => (
-              <Items key={item.id} item={item} />
+              <Items
+                key={item.id}
+                item={item}
+                isFirst={item.id == 1}
+                isSecond={item.id == 2}
+              />
             ))}
           </div>
         </Container>

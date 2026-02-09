@@ -1,10 +1,18 @@
-import React from 'react'
+import React from "react";
 
-const Items = ({item}) => {
+const Items = ({ item, isFirst, isSecond }) => {
   return (
-    <div>Items</div>
-  )
-}
+    <>
+      <div
+        className={`bg-pink-300 ${isFirst ? "col-span-2 row-span-2" : ""} ${isSecond ? "col-span-2" : "bg-red-500"} `}
+      >
+        {item.id}
 
-export default Items
+        {/* <h4>{item.title}</h4>
+          <h2>{item.name}</h2> */}
+      </div>
+    </>
+  );
+};
 
+export default Items;
