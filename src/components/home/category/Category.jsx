@@ -8,7 +8,7 @@ const Category = () => {
     <>
       <section>
         <Container>
-          <div className="grid h-100 grid-cols-4 grid-rows-2 gap-2">
+          <div className="grid h-150 grid-cols-4 grid-rows-2 gap-7.5">
             {categoryData?.map((item) => (
               <Items
                 key={item.id}
