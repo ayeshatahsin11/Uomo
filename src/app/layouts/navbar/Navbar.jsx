@@ -1,7 +1,8 @@
 import React from 'react'
-import Container from '../Container'
+import Container from '../container/Container'
 import Logo from './Logo'
 import navbarData from '@/app/data/navbarData'
+import Navicons from './Navicons'
 
 const Navbar = () => {
   return (
@@ -15,7 +16,7 @@ const Navbar = () => {
     <li key={index}>
       <a  className=" font-jost font-medium text-primary inline-block text-[14px] relative leading-6
     after:content-['']
-    after:absolute after:left-0 after:bottom-[-4px]
+    after:absolute after:left-0 after:-bottom-1
     after:h-0.5 after:w-full after:bg-primary
     after:scale-x-0 after:origin-left
     after:transition-transform after:duration-300
@@ -27,13 +28,7 @@ const Navbar = () => {
   ))}
 </ul>
 
-<ul className='flex gap-8'>
-  {navbarData?.icons?.map((item, index) => (
-    <li key={index}>
-    <button className='cursor-pointer'>{item?.icon}</button>
-    </li>
-  ))}
-</ul>
+<Navicons/>
  
 
    </div>
