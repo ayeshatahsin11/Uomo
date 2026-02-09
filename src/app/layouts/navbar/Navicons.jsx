@@ -14,6 +14,19 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog"
 import { Input } from "@/components/ui/input"
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetDescription,
+  SheetFooter,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet"
+
+
+
 //shadcn
 const Navicons = () => {
   return (
@@ -69,7 +82,79 @@ const Navicons = () => {
 
     :
 
-    <button className='cursor-pointer'>{item?.icon}</button>
+    item.id === "Menu" ? 
+  <Sheet>
+      <SheetTrigger asChild>
+       <button className='cursor-pointer'>{item?.icon}</button>
+      </SheetTrigger>
+      <SheetContent side='right'>
+        <SheetHeader>
+          <SheetTitle>Menu</SheetTitle>
+          <SheetDescription>
+           Take a look at our options facilities.
+          </SheetDescription>
+        </SheetHeader>
+      
+          
+        <SheetFooter>
+          <Button type="submit">Help</Button>
+          <SheetClose asChild>
+            <Button variant="outline">Close</Button>
+          </SheetClose>
+        </SheetFooter>
+      </SheetContent>
+    </Sheet>
+
+ : 
+   item.id === "Cart" ? 
+  <Sheet>
+      <SheetTrigger asChild>
+       <button className='cursor-pointer'>{item?.icon}</button>
+      </SheetTrigger>
+      <SheetContent side='left'>
+        <SheetHeader>
+          <SheetTitle>Add to Cart</SheetTitle>
+          <SheetDescription>
+    Look what has been added in your cart !
+          </SheetDescription>
+        </SheetHeader>
+      
+          
+        <SheetFooter>
+          <Button type="submit">Add More</Button>
+          <SheetClose asChild>
+            <Button variant="outline">Close</Button>
+          </SheetClose>
+        </SheetFooter>
+      </SheetContent>
+    </Sheet>
+
+ : 
+  item.id === "Heart" ? 
+  <Sheet>
+      <SheetTrigger asChild>
+       <button className='cursor-pointer'>{item?.icon}</button>
+      </SheetTrigger>
+      <SheetContent side='top'>
+        <SheetHeader>
+          <SheetTitle>Wishlist</SheetTitle>
+          <SheetDescription>
+    Add your favourites here!
+          </SheetDescription>
+        </SheetHeader>
+      
+          
+        <SheetFooter>
+          <Button type="submit">Add More</Button>
+          <SheetClose asChild>
+            <Button variant="outline">Close</Button>
+          </SheetClose>
+        </SheetFooter>
+      </SheetContent>
+    </Sheet>
+
+ : 
+ <button className='cursor-pointer'>{item?.icon}</button>
   
 }
 
