@@ -1,11 +1,13 @@
-import Navbar from "../layouts/navbar/Navbar";
+import Navbar from "@/components/layouts/navbar/Navbar";
+
+
 
 
 export default function Layout({ children }) {
   return (
     <html>
       <body>
-        <Navbar/>
+   <Navbar/>
         {children}
     
       </body>
