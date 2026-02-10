@@ -7,11 +7,15 @@ const Items = ({ item, isFirst, isSecond }) => {
         className={`font-jost mb-5 w-full bg-cover! bg-center! bg-no-repeat! p-10 ${isFirst && "col-span-2 row-span-2"} ${isSecond && "col-span-2"} `}
         style={{ background: `url(${item?.image?.src})` }}
       >
-        <div className="flex h-full flex-col justify-end">
+        <div className="flex h-full max-w-68.5 flex-col items-start justify-end">
           <h4 className="text-primary text-[14px] leading-6 font-normal">
             {item.title}
           </h4>
           <h2 className="text-[26px] font-medium">{item.name}</h2>
+
+          <button className="after:bg-primary relative mt-2 text-[14px] leading-6 font-medium after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-15 after:origin-left after:scale-x-0 after:transition-transform after:duration-300 after:content-[''] hover:after:scale-x-100">
+            {item.button}
+          </button>
         </div>
       </div>
     </>
