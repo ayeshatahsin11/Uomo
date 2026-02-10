@@ -19,7 +19,22 @@ const ProductCart = () => {
                     {item?.category}
                   </h4>
                   <h2 className="text-primary text-[16px]">{item?.name}</h2>
-                  <h4 className="text-primary text-[16px]">${item?.price}</h4>
+                  <h4 className="text-primary text-[16px]">
+                    {item?.originalprice ? (
+                      // Show discount pricing
+                      <div className="flex items-center gap-2">
+                        <p className="text-secondary line-through">
+                          ${item.originalprice}
+                        </p>
+                        <p className="font-medium text-red-600">
+                          ${item.price}
+                        </p>
+                      </div>
+                    ) : (
+                      // Show regular pricing
+                      <p className="text-secondary">${item.price}</p>
+                    )}
+                  </h4>
                 </div>
                 <Heart className="text-secondary cursor-pointer" />
               </div>

@@ -19,7 +19,8 @@ export const productCarts = [
     id: 2,
     category: "Makeup",
     name: "SheGlam Peel Off Lip Liner",
-    price: 35,
+    price: 20,
+    originalprice : 35,
     image: productImage2,
   },
   {
@@ -40,7 +41,8 @@ export const productCarts = [
     id: 5,
     category: "Makeup",
     name: "SheGlam Long Lasting Foundation",
-    price: 40,
+    price: 35,
+    originalprice : 40,
     image: productImage5,
   },
   {
@@ -55,6 +57,7 @@ export const productCarts = [
     category: "Makeup",
     name: "SheGlam Good Grip Primer",
     price: 23,
+    originalprice : 30,
     image: productImage7,
   },
   {
