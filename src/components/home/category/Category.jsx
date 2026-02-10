@@ -15,6 +15,7 @@ const Category = () => {
                 item={item}
                 isFirst={item.id == 1}
                 isSecond={item.id == 2}
+                isFourth = {item.id == 4}
               />
             ))}
           </div>

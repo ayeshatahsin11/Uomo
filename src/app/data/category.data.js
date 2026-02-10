@@ -21,7 +21,7 @@ export const categoryData = [
   {
     id: 3,
     title: "HOT LIST",
-    name: "kIDS COLLECTION",
+    name: "KIDS COLLECTION",
     image: categoryImage3,
     button : "SHOP NOW"
   },
