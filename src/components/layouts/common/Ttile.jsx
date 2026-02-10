@@ -9,3 +9,4 @@ const Ttile = ({ title1, title2 }) => {
 };
 
 export default Ttile;
+

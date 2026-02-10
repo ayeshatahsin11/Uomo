@@ -5,8 +5,8 @@
 @custom-variant dark (&:is(.dark *));
 /* shadecn = a library that let us use any of our preferred components */
 :root {
-  --primary : oklch(0.205 0 0);
-  --secondary : oklch(0.97 0 0);
+  --primary : #222222;
+  --secondary :#767676;
   --tertiary : #C32929;
   --color-primary : var(--primary);
   --color-secondary : var(--secondary);
