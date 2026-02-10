@@ -6,9 +6,9 @@ import Container from "@/components/layouts/container/Container";
 const Category = () => {
   return (
     <>
-      <section>
+      <section className="mt-25">
         <Container>
-          <div className="grid h-150 grid-cols-4 grid-rows-2 gap-7.5 mt-25">
+          <div className="grid h-150 grid-cols-4 grid-rows-2 gap-7.5">
             {categoryData?.map((item) => (
               <Items
                 key={item.id}

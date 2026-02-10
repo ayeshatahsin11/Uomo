@@ -4,7 +4,7 @@ const Items = ({ item, isFirst, isSecond, isFourth }) => {
   return (
     <>
       <div
-        className={`font-jost mb-5 w-full bg-cover! bg-center! bg-no-repeat! p-10 ${isFirst && "col-span-2 row-span-2"} ${isSecond && "col-span-2"} `}
+        className={`font-jost w-full bg-cover! bg-center! bg-no-repeat! p-10 ${isFirst && "col-span-2 row-span-2"} ${isSecond && "col-span-2"} `}
         style={{ background: `url(${item?.image?.src})` }}
       >
         <div className="flex h-full max-w-68.5 flex-col items-start justify-end">
